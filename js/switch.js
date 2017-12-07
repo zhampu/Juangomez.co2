@@ -14,7 +14,7 @@ function mover() {
 window.onload = function(){
    setTimeout(function(){
        mover();
-   }, 3000);
+   }, 2000);
 };
 
 function ES() {
