@@ -1,38 +1,22 @@
-//
-// $(document).ready(function() {
-//   function e() {
-//   }
-//
-//
-//  $(window).width() > 1024 && (screenshotPreview(), $(".abrir").hover(function() {
-//     $(this).addClass("active-screen")
-//   }, function() {
-//     $(this).removeClass("active-screen")
-//   }));
-//
-//
-// });
-// this.screenshotPreview = function() {
-//     xOffset = 200, yOffset = -150, $("span.screenshot").hover(function(e) {
-//       $("body").append("<div id='screenshot'><img src='" + this.rel + "' alt='' /></div>"),
-//       $("#screenshot").css("top", e.pageY - xOffset + "px").css("left", e.pageX + yOffset + "px").fadeIn("300")
-//     }, function() {
-//      $("#screenshot").remove()
-//     }), $("span.screenshot").mousemove(function(e) {
-//       $("#screenshot").css("top", e.pageY - xOffset + "px").css("left", e.pageX + yOffset + "px")
-//     })
-//   };
-
-
-
-$('.image-link').magnificPopup({type:'image'});
-
-$('.carre').magnificPopup({
-  delegate: 'img', // child items selector, by clicking on it popup will open
-  type: 'image'
-  // other options
-});
 //languages
+
+function mover() {
+  $(".c").each(function(index) {
+    $(this).css({
+      left: ((Math.floor(Math.random() * ($('.carre').width())) / 3)),
+      top: ((Math.floor(Math.random() * ($('.carre').height())) / 4)),
+
+
+    });
+  });
+}
+
+window.onload = function(){
+   setTimeout(function(){
+       mover();
+   }, 3000);
+};
+
 function ES() {
   var showme = document.getElementById("ES");
   showme.style.display = "block";
@@ -86,58 +70,29 @@ $(".abrir").click(function() {
 
 })
 
-// $( '.c' ).each(function( index ) {
-//   $(this).css({
-//     left : ((Math.floor(Math.random() * ($('.carre').width()-400))+20)),
-//        top : ((Math.floor(Math.random() * ($('.carre').height()-200))+20)),
-//
-//
-//    //  Math.floor( Math.random() * max_width );
-//    //            var y = Math.floor( Math.random() * max_height );
-//
-//  });
-// });
-//
-// $(".butonsito").click(function() {
-//  $( '.c' ).each(function( index ) {
-//    $(this).css({
-//      left : ((Math.floor(Math.random() * ($('.carre').width()-400))+20)),
-//         top : ((Math.floor(Math.random() * ($('.carre').height()-200))+20)),
-//
-//
-//     //  Math.floor( Math.random() * max_width );
-//     //            var y = Math.floor( Math.random() * max_height );
-//
-//   });
-// });
-// });
+
+//randomize the images on load
 
 
-
-$( '.c' ).each(function( index ) {
-  $(this).css({
-    left : ((Math.floor(Math.random() * ($('.carre').width()))/3)),
-       top : ((Math.floor(Math.random() * ($('.carre').height()))/4)),
-
-
-   //  Math.floor( Math.random() * max_width );
-   //            var y = Math.floor( Math.random() * max_height );
-
- });
-});
-
-
-$(".butonsito").click(function() {
- $( ".c" ).each(function( index ) {
-   $(this).css({
-     left : ((Math.floor(Math.random() * ($('.carre').width()))/3)),
-        top : ((Math.floor(Math.random() * ($('.carre').height()))/4)),
-
-
-    //  Math.floor( Math.random() * max_width );
-    //            var y = Math.floor( Math.random() * max_height );
-
-  });
-});
-});
 $(".c").draggable();
+$('.swipebox').swipebox();
+$(".butonsito").click(function(){
+  mover();
+});
+
+// $(function() {
+//     mover()
+// });
+
+
+
+
+// setTimeout(function () {
+//     mover();
+// }, 2000);
+
+
+// window.setTimeout(function()
+// {
+//   mover();
+// }, 1000);

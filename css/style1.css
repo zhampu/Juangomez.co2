@@ -323,7 +323,7 @@ a.active, a:active, a:hover {
   overflow: hidden;
   margin: 3%;
 }
-.c {
+ a img {
   width: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
@@ -376,7 +376,7 @@ h2 {
 .ui-draggable-dragging {
   cursor: move;
 }
-#c img:hover {
+ a #c img:hover {
   cursor: move;
 }
 .hidden {
@@ -618,7 +618,7 @@ h2 {
 .ui-draggable-dragging {
   cursor: move;
 }
-#c img:hover {
+ a #c img:hover {
   cursor: move;
 }
 
