@@ -23,6 +23,15 @@
 //     })
 //   };
 
+
+
+$('.image-link').magnificPopup({type:'image'});
+
+$('.carre').magnificPopup({
+  delegate: 'img', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
+});
 //languages
 function ES() {
   var showme = document.getElementById("ES");
