@@ -164,7 +164,11 @@ body {
   margin-bottom: 2em;
 }
 
-
+.project-info p{
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
 
 /*projects*/
 #collфdæl {
@@ -739,7 +743,7 @@ h2 {
     font-size: 10px;
     font-family: IB;
     page-break-after: always;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 
@@ -891,7 +895,7 @@ h2 {
     font-size: 10px;
     font-family: IB;
     page-break-after: always;
-    margin-top: 10%;
+    margin-top: 2%;
   }
   .c {
     width: 100%;
