@@ -78,6 +78,7 @@ nav ul li a:hover {
 
 /*-----------------MENU--------------------------*/
 .fadein {
+  hyphens:  normal;
   animation: fadein 3s;
   -moz-animation: fadein 3s;
   /* Firefox */
@@ -313,7 +314,7 @@ a.active, a:active, a:hover {
 .carre {
   width: auto;
   height: auto;
-  padding-bottom: 50px;
+  padding: 20px;
   overflow: hidden;
   margin: 3%;
 }
@@ -455,6 +456,14 @@ h2 {
   font-family: IBH;
   color: #000000;
 }
+
+#sportbook {
+  font-size: 7vw;
+  ;
+  font-family: IBH;
+  color: #751870;
+  page-break-before: always;
+}
 /*experience*/
 #IRB {
   font-size: 7vw;
@@ -537,7 +546,6 @@ h2 {
   font-family: IBH;
   color: #25346D;
   !important;
-  page-break-before: always;
 }
 a:active, a:hover, a:link, a:visited {
   outline: 0;

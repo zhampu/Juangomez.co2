@@ -1,22 +1,4 @@
 //languages
-
-function mover() {
-  $(".c").each(function(index) {
-    $(this).css({
-      left: ((Math.floor(Math.random() * ($('.carre').width())) / 3)),
-      top: ((Math.floor(Math.random() * ($('.carre').height())) / 4)),
-
-
-    });
-  });
-}
-
-window.onload = function(){
-   setTimeout(function(){
-       mover();
-   }, 2000);
-};
-
 function ES() {
   var showme = document.getElementById("ES");
   showme.style.display = "block";
@@ -60,26 +42,34 @@ function DE() {
   hideme.style.display = "none";
   var hideme = document.getElementById("EN");
   hideme.style.display = "none";
-
 }
 //Open the words
 $(".abrir").click(function() {
   $(this).next(".contenu").toggle("slow");
   $(this).toggleClass("inline");
-
-
+  setTimeout(function() {
+    mover();
+  }, 500);
 })
-
-
-//randomize the images on load
-
-
 $(".c").draggable();
 $('.swipebox').swipebox();
-$(".butonsito").click(function(){
-  mover();
-});
+//randomize the images on load
+function mover() {
+  $(".c").each(function(index) {
+    $(this).css({
+      left: ((Math.floor(Math.random() * ($('.carre').width())) / 4)),
+      top: ((Math.floor(Math.random() * ($('.carre').height())) / 5)),
 
+
+    });
+  });
+}
+
+// window.onload = function(){
+//    setTimeout(function(){
+//        mover();
+//    }, 2000);
+// };
 // $(function() {
 //     mover()
 // });
