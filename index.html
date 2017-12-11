@@ -1,751 +1,587 @@
+
+
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="text/css" http-equiv="Content-Style-Type">
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
-    <title>Juan Andres Gomez</title>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="css/swipebox.min.css">
-    <script src="js/jquery.swipebox.min.js"></script>
-
-</head>
-
-<div class="wrapper">
-
-    <header class="header" class="hidden-print">
-        <nav class="hidden-print">
-
-
+   <head>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+      <meta content="text/css" http-equiv="Content-Style-Type">
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+      <title>Juan Andres Gomez</title>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+      <script src="js/jquery-ui.min.js"></script>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/swipebox.min.css">
+      <script src="js/jquery.swipebox.min.js"></script>
+   </head>
+   <div class="wrapper">
+      <header class="header" class="hidden-print">
+         <nav class="hidden-print">
             <input type="checkbox" id="nav" class="hidden" />
             <label for="nav" class="nav-open"><i></i><i></i><i></i>
             </label>
             <div class="nav-container">
-                <ul>
-                    <li><a href="index.html" title="Juan Gomez" style="font-family: IBH;">juan gomez</a>
-                    </li>
-                    <li><a href="index.html" style="font-family: IBH; ">pieces</a>
-                    </li>
-                    <li><a href="experience.html" title="experiences">experience</a>
-                    </li>
-                    <li><a href="workshops.html" title="workshops">workshops</a>
-                    </li>
-                    <li><a href="research.html" title="research">research</a>
-                    </li>
-                    <li><a href="info.html" title="info">info</a>
-                    </li>
-
-                    <li class="lengua"><a href="#" class="button" onclick="ES()">es</a>
-                    </li>
-                    <li class="lengua"><a href="#" class="button" onclick="EN()">en</a>
-                    </li>
-                    <li class="lengua"> <a href="#" class="button" onclick="FR()">fr</a>
-                    </li>
-                    <li class="lengua"><a href="#" class="button" onclick="DE()">de</a> </li>
-                </ul>
+               <ul>
+                  <li><a href="index.html" title="Juan Gomez" style="font-family: IBH;">juan gomez</a>
+                  </li>
+                  <li><a href="index.html" style="font-family: IBH; ">pieces</a>
+                  </li>
+                  <li><a href="experience.html" title="experiences">experience</a>
+                  </li>
+                  <li><a href="workshops.html" title="workshops">workshops</a>
+                  </li>
+                  <li><a href="research.html" title="research">research</a>
+                  </li>
+                  <li><a href="info.html" title="info">info</a>
+                  </li>
+                  <li class="lengua"><a href="#" class="button" onclick="ES()">es</a>
+                  </li>
+                  <li class="lengua"><a href="#" class="button" onclick="EN()">en</a>
+                  </li>
+                  <li class="lengua"> <a href="#" class="button" onclick="FR()">fr</a>
+                  </li>
+                  <li class="lengua"><a href="#" class="button" onclick="DE()">de</a> </li>
+               </ul>
             </div>
-
-        </nav>
-
-
-
-    </header>
-
-    <body>
-
-        <div id="EN" class="hidden-print">
+         </nav>
+      </header>
+      <body>
+         <div id="EN" class="hidden-print">
             <div id="box" class="hidden-print"></div>
-        </div>
-
-        <div id="FR">
+         </div>
+         <div id="FR">
             <br>
-
-
-
             <section class="fadein">
+               <!-- <a href="#sportbook" class="abrir" id="sportbook" class="titulo">make book make sport &emsp;
+                  </a>
+                  <div class="contenu">
 
-                <!-- <a href="#sportbook" class="abrir" id="sportbook" class="titulo">make book make sport &emsp;
-                   </a>
-                <div class="contenu">
-
-                    <div class="carre">
+                   <div class="carre">
 
 
-                        <a rel="gallery-1" href="images/MBMS/1.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/MBMS/1.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-1" href="images/MBMS/2.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/MBMS/2.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-1" href="images/MBMS/3.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/MBMS/3.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-1" href="images/MBMS/4.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/MBMS/4.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-1" href="images/MBMS/5.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/MBMS/5.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-1" href="images/MBMS/6.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/MBMS/6.jpg" alt="image">
-                        </a>
-
+                       <a rel="gallery-1" href="images/MBMS/1.jpg" class="swipebox">
+                           <img class="c" id="c" src="images/MBMS/1.jpg" alt="image">
+                       </a>
+                       <a rel="gallery-1" href="images/MBMS/2.jpg" class="swipebox">
+                           <img class="c" id="c" src="images/MBMS/2.jpg" alt="image">
+                       </a>
+                       <a rel="gallery-1" href="images/MBMS/3.jpg" class="swipebox">
+                           <img class="c" id="c" src="images/MBMS/3.jpg" alt="image">
+                       </a>
+                       <a rel="gallery-1" href="images/MBMS/4.jpg" class="swipebox">
+                           <img class="c" id="c" src="images/MBMS/4.jpg" alt="image">
+                       </a>
+                       <a rel="gallery-1" href="images/MBMS/5.jpg" class="swipebox">
+                           <img class="c" id="c" src="images/MBMS/5.jpg" alt="image">
+                       </a>
+                       <a rel="gallery-1" href="images/MBMS/6.jpg" class="swipebox">
+                           <img class="c" id="c" src="images/MBMS/6.jpg" alt="image">
+                       </a>
 
 
 
 
-                    </div>
 
-                     <section class="project__header"><a class="plus">+</a>
+                   </div>
+
+                    <section class="project__header"><a class="plus">+</a>
+                       <div class="project-info"  >
+
+                           <p>
+                           </p>
+                       </div>
+
+
+                       <div class="information">
+                           <h2>catégorie</h2>
+                           <p>
+                               Objet et site internet
+                           </p>
+                           <h2>date</h2>
+                           <p>17.09.2017</p>
+                           <h2>contexte</h2>
+                           <p>HEAD Media Design</p>
+                           <h2>localisation</h2>
+                           <p>Genève</p>
+                           <h2>conception/réalisation</h2>
+                           <p>2 semaines</p>
+                       </div>
+                   </section>
+
+
+                  </div> -->
+               <!-- <a href="#chaumont" class="abrir" id="chaumont" class="titulo">une cartographie de la recherche en design graphique
+                  </a>
+                  <div class="contenu">
+
+                   <div class="carre">
+
+
+                       <a rel="gallery-2" href="/images/cartographie/1.png" class="swipebox">
+                           <img class="c" id="c" src="images/cartographie/1.png" alt="image">
+                       </a>
+                       <a rel="gallery-2" href="images/cartographie/2.png" class="swipebox">
+                           <img class="c" id="c" src="images/cartographie/2.png" alt="image">
+                       </a>
+
+
+
+
+                   </div>
+
+                   <section class="project__header">
+                   <a class="plus">+</a>
+                       <div class="project-info"  >
+
+                           <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs (accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
+                               <a href="http://www.wblut.com/">W:blut</a>
+                           </p>
+                       </div>
+
+
+                       <div class="information">
+                           <h2>catégorie</h2>
+                           <p>
+                               installation interactive
+                           </p>
+                           <h2>date</h2>
+                           <p>24-05-2016</p>
+                           <h2>contexte</h2>
+                           <p>Universidad de los Andes</p>
+                           <h2>localisation</h2>
+                           <p>Bogota</p>
+                           <h2>conception/réalisation</h2>
+                           <p>4 semaines</p>
+                       </div>
+                   </section>
+
+
+                  </div>
+
+
+
+
+
+                  <a href="#chaumont" class="abrir" id="chaumont" class="titulo">une cartographie de la recherche en design graphique
+                  </a>
+                  <div class="contenu">
+
+                   <div class="carre">
+
+
+                       <a rel="gallery-2" href="/images/cartographie/1.png" class="swipebox">
+                           <img class="c" id="c" src="images/cartographie/1.png" alt="image">
+                       </a>
+                       <a rel="gallery-2" href="images/cartographie/2.png" class="swipebox">
+                           <img class="c" id="c" src="images/cartographie/2.png" alt="image">
+                       </a>
+
+
+
+
+                   </div>
+
+                   <section class="project__header">
+                   <a class="plus">+</a>
+                       <div class="project-info"  >
+
+                           <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs (accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
+                               <a href="http://www.wblut.com/">W:blut</a>
+                           </p>
+                       </div>
+
+
+                       <div class="information">
+                           <h2>catégorie</h2>
+                           <p>
+                               installation interactive
+                           </p>
+                           <h2>date</h2>
+                           <p>24-05-2016</p>
+                           <h2>contexte</h2>
+                           <p>Universidad de los Andes</p>
+                           <h2>localisation</h2>
+                           <p>Bogota</p>
+                           <h2>conception/réalisation</h2>
+                           <p>4 semaines</p>
+                       </div>
+                   </section>
+
+
+                  </div>
+
+                  -->
+               <a href="#hyg" class="abrir" id="hyg" class="titulo">
+               help you government </a>
+               <div class="contenu">
+                  <div class="carre">
+                     <a rel="gallery-3" href="images/HYG/post-1.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/HYG/post-1.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-3" href="images/HYG/post-2.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/HYG/post-2.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-3" href="images/HYG/post-3.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/HYG/post-3.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-3" href="images/HYG/post-4.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/HYG/post-4.gif" alt="image">
+                     </a>
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info"  >
+                        <p>Améliorez votre vie tout en maintenant la paix dans les rues! Obtenez des réductions d'impôt, des coupons alimentaires et d'autres avantages en accomplissant votre devoir patriotique en aidant les forces de police débordées dans cette ère chaotique et anti-émeute. Recherchez sur la carte les émeutes les plus proches de votre ville.
+                        </p>
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           Objet et site internet
+                        </p>
+                        <h2>date</h2>
+                        <p>17.09.2017</p>
+                        <h2>contexte</h2>
+                        <p>HEAD Media Design</p>
+                        <h2>localisation</h2>
+                        <p>Genève</p>
+                        <h2>conception/réalisation</h2>
+                        <p>2 semaines</p>
+                     </div>
+                  </section>
+               </div>
+               <a href="#wiki2epub" class="abrir" id="wiki2epub" class="titulo">wiki2epub
+               </a>
+               <div class="contenu">
+                  <div class="carre">
+                     <a rel="gallery-4" href="images/wiki2epub/0.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/0.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/1.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/1.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/2.png" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/2.png" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/4.png" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/4.png" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/5.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/5.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/6.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/6.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/9.png" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/9.png" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/10.png" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/10.png" alt="image">
+                     </a>
+                     <a rel="gallery-4" href="images/wiki2epub/11.gif" class="swipebox">
+                     <img class="c" id="c" src="images/wiki2epub/11.gif" alt="image">
+                     </a>
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info"  >
+                        <p>Pendant un semestre j’ai travaillé comme stagiaire chercheur dans un laboratoire de recherche, l’institute of Network Cultures Avec Cristhina Cochior(RO), et le soutien de La fondation Wikimedia Netherlands, nous avons mené une recherche expérimentale et exploratoire sur la potentielle utilisation du contenu des projets tel que Wikipedia, Wikivoyage, Wikidictionary, etc dans des formats offline tel que Epub. Durant les 5 mois de recherche, nous avons fait passer des entretiens aux artistes ( Anja Groten de Hackers & Designers, Femke Smelts de Contant et Andre Castro de Piet Zwart ) concernant leurs utilisations du wiki : certains d’entre eux l’utilisent comme outil de création et d’autres sont intéressés pour l’utiliser pour faire des publications hybrides. Nous avons présenté notre recherche à la conférence annuelle de Wikimedia NL à Utrecht. Nous avons exposé de manière détaillée les découvertes de notre recherche, et nous avons présenté le design d’un prototype qui sert à exporter du contenu des Wikis(html) en epubs. Cette recherche est toujours en cours et nous la développons pendant notre temps libre car nous avons reçu beaucoup d’intérêt de la part de la fondation et des wikis indépendants. Cette recherche m’a fait découvrir le monde de la publication expérimentale et hybride et m’a fait prendre conscience de ses enjeux auxquels sont confrontés ses nombreux acteurs. Pour en savoir plus sur cette recherche vous pouvez consulter notre page Meta-Wiki ou notre blog ainsi que regarder la vidéo de présentation de la recherche. Le code est aussi disponible en Open Source.
+                           <br>
+                           <a class="links" href="https://meta.wikimedia.org/wiki/Research_on_e-books_with_Wikimedia_content">Metawiki</a>
+                        </p>
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           outil open source
+                        </p>
+                        <h2>date</h2>
+                        <p>31-09-2016</p>
+                        <h2>contexte</h2>
+                        <p>PublishingLab</p>
+                        <h2>localisation</h2>
+                        <p>Amsterdam</p>
+                        <h2>conception/réalisation</h2>
+                        <p>5 mois</p>
+                     </div>
+                  </section>
+               </div>
+               <a href="#collфdæl" class="abrir" id="collфdæl" class="titulo">
+               <span class="color1">collфdæl</span> </a>
+               <div class="contenu">
+                  <div class="carre">
+                     <a rel="gallery-5" href="images/colloidal/0.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/colloidal/0.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-5" href="images/colloidal/1.png" class="swipebox">
+                     <img class="c" id="c" src="images/colloidal/1.png" alt="image">
+                     </a>
+                     <a rel="gallery-5" href="images/colloidal/2.png" class="swipebox">
+                     <img class="c" id="c" src="images/colloidal/2.png" alt="image">
+                     </a>
+                     <a rel="gallery-5" href="images/colloidal/3.png" class="swipebox">
+                     <img class="c" id="c" src="images/colloidal/3.png" alt="image">
+                     </a>
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info"  >
+                        <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs (accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
+                           <a href="http://www.wblut.com/">W:blut</a>
+                        </p>
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           installation interactive
+                        </p>
+                        <h2>date</h2>
+                        <p>24-05-2016</p>
+                        <h2>contexte</h2>
+                        <p>Universidad de los Andes</p>
+                        <h2>localisation</h2>
+                        <p>Bogota</p>
+                        <h2>conception/réalisation</h2>
+                        <p>4 semaines</p>
+                     </div>
+                  </section>
+               </div>
+               <a href="#chambre" class="abrir" id="chambre">
+               <span>le comble de la chambre blanche</span>
+               </a>
+               <div class="contenu">
+                  <div class="carre">
+                     <a rel="gallery-6" href="images/cb/cb1.png" class="swipebox">
+                     <img class="c" id="c" src="images/cb/cb1.png" alt="image">
+                     </a>
+                     <a rel="gallery-6" href="images/cb/cb2.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/cb/cb2.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-6" href="images/cb/cb3.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/cb/cb3.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-6" href="images/cb/cb4.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/cb/cb4.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-6" href="images/cb/cb5.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/cb/cb5.jpg" alt="image">
+                     </a>
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info"  >
+                        <p>Comment se métamorphose des objets dans la virtualisation du monde ?
+                           <br> Quelle valeur invisible ont des objets qui identifient notre style ?
+                           <br> Le mode d’utilisation d’un objet pourrait créer de nouvelles sous-cultures ?
+                           <br> Peut on donner une utilisation spécifique a un objet qui n’a pas de fonction particulière ?
+                           <br> Dans quelle mesure la technologie me permet d’approcher mon identité idéale ?
+                           <br> j’ai crée une chambre blanche, dans laquelle nous avons placé un lit,un réfrigérateur blanc, et un coquillage blanc. Ces trois éléments étaients connectés avec des capteurs pour déclencher quatre vidéos qui suggéraient l’érotisme,la désinhibition avec des créations sonores binaurale sur mesure. Les vidéos et sons se déclenchaient dès qu’il y avait une interaction avec un des trois objets de la chambre. Nous avions placé un ipad dans le réfrigérateur avec l’application Périscope en streaming pour remettre en question le sentiment d’intimité créée par cette ambiance blanche.
+                           <br>
+                           <a href="https://vimeo.com/211222335" class="links">video</a>
+                           <br>
+                           <a href="https://soundcloud.com/juan-andres-gomez-1/sets/el-colmo-de-un-cuarto-blanco" class="links">sound</a>
+                        </p>
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           installation interactive
+                        </p>
+                        <h2>date</h2>
+                        <p>24-05-2016</p>
+                        <h2>contexte</h2>
+                        <p>Universidad de los Andes</p>
+                        <h2>localisation</h2>
+                        <p>Bogota</p>
+                        <h2>conception/réalisation :</h2>
+                        <p>4 semaines</p>
+                     </div>
+                  </section>
+               </div>
+               <a href="#dumbar" class="abrir" id="dumbar" class="titulo">decoding Information for future communication</a>
+               <div class="contenu">
+                  <div class="carre">
+                     <a rel="gallery-7" href="images/dumbar/dumbar1.png" class="swipebox">
+                     <img class="c" id="c" src="images/dumbar/dumbar1.png" alt="image">
+                     </a>
+                     <a rel="gallery-7" href="images/dumbar/dumbar2.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/dumbar/dumbar2.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-7" href="images/dumbar/dumbar3.png" class="swipebox">
+                     <img class="c" id="c" src="images/dumbar/dumbar3.png" alt="image">
+                     </a>
+                     <a rel="gallery-7" href="images/dumbar/dumbar4.png" class="swipebox">
+                     <img class="c" id="c" src="images/dumbar/dumbar4.png" alt="image">
+                     </a>
+                     <a rel="gallery-7" href="images/dumbar/dumbar5.png" class="swipebox">
+                     <img class="c" id="c" src="images/dumbar/dumbar5.png" alt="image">
+                     </a>
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info"  >
+                        <p>"Nous vivons ici et maintenant avec des souvenirs du passé et des fantasmes de l’avenir. Notre rôle en tant que communicateurs est de donner forme à cet avenir. Nous rendons l’avenir tangible en utilisant les outils du présent en faisant des références à des expériences passées. Et si l’avenir que nous devons créer n’est pas le nôtre ? Quelle langue utilisons-nous pour communiquer ? Peut-on se détacher de nos milieux culturels et esthétiques ? Et est-ce le but ultime d’un communicateur ? Nous avons été contactés par une nation extraterrestre. Nous avons reçu plusieurs messages au cours des derniers jours. Il est urgent de déchiffrer ces messages avant leur arrivée. Date prévue de l’atterrissage : dimanche 31 juillet 14h00." En binôme, nous avons voulu montrer aux extraterrestres que les êtres humains sont très différents au premier abord. Pour expliquer ces différences aux aliens, nous avons enregistré les réactions des passants à la suite de 3 différents gestes - une danse - une question inhabituelle - un geste amical. Ensuite, on a reporté les réactions des passants dans un diagramme pour établir un profil psychologique pour chacun d’eux selon le modèle de James Russell and Lisa Feldman Barrett. Le but était de reproduire ces mêmes gestes aux extraterrestres pour qu’ils puissent communiquer avec nous et ainsi connaître nos intentions en fonction de nos réactions. Workshop avec Studio Dumbar et Rejane Dal Bello.
+                           <br>
+                           <a href="https://www.youtube.com/watch?v=ZqbPe8UKhsY" class="links">video</a>
+                        </p>
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           perfomance
+                        </p>
+                        <h2>date</h2>
+                        <p>31/07/2016
+                        </p>
+                        <h2>contexte</h2>
+                        <p>Open Set</p>
+                        <h2>localisation</h2>
+                        <p>Rotterdam</p>
+                        <h2>conception/réalisation</h2>
+                        <p>2 jours</p>
+                     </div>
+                  </section>
+               </div>
+               <a href="#andes" class="abrir" id="andes">
+               <span>what happened yesterday?</span>
+               </a>
+               <div class="contenu">
+                  <div class="carre">
+                     <a rel="gallery-8" href="images/ayer/ayer3.png" class="swipebox">
+                     <img class="c" id="c" src="images/ayer/ayer3.png" alt="image">
+                     </a>
+                     <a rel="gallery-8" href="images/ayer/ayer1.png" class="swipebox">
+                     <img class="c" id="c" src="images/ayer/ayer1.png" alt="image">
+                     </a>
+                     <a rel="gallery-8" href="images/ayer/ayer2.png" class="swipebox">
+                     <img class="c" id="c" src="images/ayer/ayer2.png" alt="image">
+                     </a>
+                     <a rel="gallery-8" href="images/ayer/ayer4.png" class="swipebox">
+                     <img class="c" id="c" src="images/ayer/ayer4.png" alt="image">
+                     </a>
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info">
                         <div class="project-info"  >
-
-                            <p>
-                            </p>
+                           <p>D’après une soirée festive il arrive d’oublier certains moments, par fois même les soirées peuvent être très folles et les gens des fois se ressemblent le lendemain pour essayer de chercher «ce qui s’est passé la veille» L’exercice était de créer les règles d’un jeux de société et puis passer à créer le joue et ensuite de ajouter une dimension transmedia à la façon de le jouer. j’ai crée un ensemble des règles qu’on a ensuite partagé en open source pour nos autres camarades.Une fois le jeux avait été testé on introduisait certaines fonctionnalités avec une carte Arduino avec un capteur de mouvement binaire et Processing afin de rendre le jeu plus interactif et visuel
+                              <br>
+                              <br>
+                              <a href="https://github.com/zhampu/quemepasoayer" class="links">Github</a>
+                              <br> <a href="http://quemepasoayer.tumblr.com/" class="links">Tumblr blogs</a>
+                              <br>
+                              <a href="https://vimeo.com/211232413" class="links">video</a>
+                           </p>
                         </div>
-
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                Objet et site internet
-                            </p>
-                            <h2>date</h2>
-                            <p>17.09.2017</p>
-                            <h2>contexte</h2>
-                            <p>HEAD Media Design</p>
-                            <h2>localisation</h2>
-                            <p>Genève</p>
-                            <h2>conception/réalisation</h2>
-                            <p>2 semaines</p>
-                        </div>
-                    </section>
-
-
-                </div> -->
-                <!-- <a href="#chaumont" class="abrir" id="chaumont" class="titulo">une cartographie de la recherche en design graphique
-                   </a>
-                <div class="contenu">
-
-                    <div class="carre">
-
-
-                        <a rel="gallery-2" href="/images/cartographie/1.png" class="swipebox">
-                            <img class="c" id="c" src="images/cartographie/1.png" alt="image">
-                        </a>
-                        <a rel="gallery-2" href="images/cartographie/2.png" class="swipebox">
-                            <img class="c" id="c" src="images/cartographie/2.png" alt="image">
-                        </a>
-
-
-
-
-                    </div>
-
-                    <section class="project__header">
-                    <a class="plus">+</a>
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           jeu de societé transmedia
+                        </p>
+                        <h2>date</h2>
+                        <p>24-05-2016
+                        </p>
+                        <h2>contexte</h2>
+                        <p>Universidad de los Andes</p>
+                        <h2>localisation</h2>
+                        <p>Bogota</p>
+                        <h2>conception/réalisation</h2>
+                        <p>2 semaines</p>
+                     </div>
+                  </section>
+               </div>
+               <a href="#scanner" class="abrir" id="scanner">
+               <span>human scanner</span>
+               </a>
+               <div class="contenu">
+                  <div class="carre">
+                     <a rel="gallery-9" href="images/hs/hs1.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/hs/hs1.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-9" href="images/hs/hs2.jpg" class="swipebox">
+                     <img class="c" id="c" src="images/hs/hs2.jpg" alt="image">
+                     </a>
+                     <a rel="gallery-9" href="images/hs/hs3.png" class="swipebox">
+                     <img class="c" id="c" src="images/hs/hs3.png" alt="image">
+                     </a>
+                     <a rel="gallery-9" href="images/hs/hs4.png" class="swipebox">
+                     <img class="c" id="c" src="images/hs/hs4.png" alt="image">
+                     </a>
+                     <a rel="gallery-9" href="images/hs/hs5.png" class="swipebox">
+                     <img class="c" id="c" src="images/hs/hs5.png" alt="image">
+                     </a>
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info">
                         <div class="project-info"  >
-
-                            <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs (accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
-                                <a href="http://www.wblut.com/">W:blut</a>
-                            </p>
+                           <p>Le concept de publier a évolué au fur et à mesure des années et de nouveaux termes tel que stack, drop, post et perform ont apparus pour rendre compte de ces évolutions. La publication s’est dotée d’enjeux politiques et sociaux. Lors d’un workshop « Web-to-Print-to-Street avec Paul Sollelis j’ai demandé à des passants dans les rues de Rotterdam de se laisser prendre en photo pour ensuite «découper leur corps» pour «poster» ces différentes parties sur une page Instagram que j’avais crée. Le langage utilisé est remis est question entre la traite des être humains et le concept de découper, chopper et poster qui sont des mots utilisés couramment dans des logiciels de créations d’images. Human Scanner est un projet que j’actualise régulièrement.
+                              <br>
+                              <a class="links" href="https://www.instagram.com/humanscanner/">Instagram</a>
+                              <a class="links" href="https://vimeo.com/210329302">video</a>
+                           </p>
                         </div>
-
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                installation interactive
-                            </p>
-                            <h2>date</h2>
-                            <p>24-05-2016</p>
-                            <h2>contexte</h2>
-                            <p>Universidad de los Andes</p>
-                            <h2>localisation</h2>
-                            <p>Bogota</p>
-                            <h2>conception/réalisation</h2>
-                            <p>4 semaines</p>
-                        </div>
-                    </section>
-
-
-                </div>
-
-
-
-
-
-                <a href="#chaumont" class="abrir" id="chaumont" class="titulo">une cartographie de la recherche en design graphique
-                   </a>
-                <div class="contenu">
-
-                    <div class="carre">
-
-
-                        <a rel="gallery-2" href="/images/cartographie/1.png" class="swipebox">
-                            <img class="c" id="c" src="images/cartographie/1.png" alt="image">
-                        </a>
-                        <a rel="gallery-2" href="images/cartographie/2.png" class="swipebox">
-                            <img class="c" id="c" src="images/cartographie/2.png" alt="image">
-                        </a>
-
-
-
-
-                    </div>
-
-                    <section class="project__header">
-                    <a class="plus">+</a>
-                        <div class="project-info"  >
-
-                            <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs (accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
-                                <a href="http://www.wblut.com/">W:blut</a>
-                            </p>
-                        </div>
-
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                installation interactive
-                            </p>
-                            <h2>date</h2>
-                            <p>24-05-2016</p>
-                            <h2>contexte</h2>
-                            <p>Universidad de los Andes</p>
-                            <h2>localisation</h2>
-                            <p>Bogota</p>
-                            <h2>conception/réalisation</h2>
-                            <p>4 semaines</p>
-                        </div>
-                    </section>
-
-
-                </div>
-
- -->
-
-
-                <a href="#hyg" class="abrir" id="hyg" class="titulo">
-                    help you government </a>
-                <div class="contenu">
-
-                    <div class="carre">
-
-
-                        <a rel="gallery-3" href="images/HYG/post-1.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/HYG/post-1.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-3" href="images/HYG/post-2.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/HYG/post-2.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-3" href="images/HYG/post-3.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/HYG/post-3.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-3" href="images/HYG/post-4.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/HYG/post-4.gif" alt="image">
-                        </a>
-
-
-
-
-                    </div>
-
-                    <section class="project__header">
-                      <a class="plus">+</a>
-                        <div class="project-info"  >
-
-                            <p>Améliorez votre vie tout en maintenant la paix dans les rues! Obtenez des réductions d'impôt, des coupons alimentaires et d'autres avantages en accomplissant votre devoir patriotique en aidant les forces de police débordées dans cette ère chaotique et anti-émeute. Recherchez sur la carte les émeutes les plus proches de votre ville.
-                            </p>
-                        </div>
-
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                Objet et site internet
-                            </p>
-                            <h2>date</h2>
-                            <p>17.09.2017</p>
-                            <h2>contexte</h2>
-                            <p>HEAD Media Design</p>
-                            <h2>localisation</h2>
-                            <p>Genève</p>
-                            <h2>conception/réalisation</h2>
-                            <p>2 semaines</p>
-                        </div>
-                    </section>
-
-
-                </div>
-                <a href="#wiki2epub" class="abrir" id="wiki2epub" class="titulo">wiki2epub
-                   </a>
-                <div class="contenu">
-
-                    <div class="carre">
-
-
-                        <a rel="gallery-4" href="images/wiki2epub/0.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/wiki2epub/0.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-4" href="images/wiki2epub/1.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/wiki2epub/1.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-4" href="images/wiki2epub/2.png" class="swipebox">
-                            <img class="c" id="c" src="images/wiki2epub/2.png" alt="image">
-                        </a>
-                        <a rel="gallery-4" href="images/wiki2epub/4.png" class="swipebox">
-
-                            <img class="c" id="c" src="images/wiki2epub/4.png" alt="image">
-
-                        </a>
-
-                        <a rel="gallery-4" href="images/wiki2epub/5.jpg" class="swipebox">
-
-                            <img class="c" id="c" src="images/wiki2epub/5.jpg" alt="image">
-
-                        </a>
-
-                        <a rel="gallery-4" href="images/wiki2epub/6.jpg" class="swipebox">
-
-                            <img class="c" id="c" src="images/wiki2epub/6.jpg" alt="image">
-
-                        </a>
-
-                        <a rel="gallery-4" href="images/wiki2epub/9.png" class="swipebox">
-
-                            <img class="c" id="c" src="images/wiki2epub/9.png" alt="image">
-
-                        </a>
-
-                        <a rel="gallery-4" href="images/wiki2epub/10.png" class="swipebox">
-
-                            <img class="c" id="c" src="images/wiki2epub/10.png" alt="image">
-
-                        </a>
-
-                        <a rel="gallery-4" href="images/wiki2epub/11.gif" class="swipebox">
-
-                            <img class="c" id="c" src="images/wiki2epub/11.gif" alt="image">
-
-                        </a>
-
-
-
-
-
-                    </div>
-
-                    <section class="project__header">
-                      <a class="plus">+</a>
-                        <div class="project-info"  >
-
-                            <p>Pendant un semestre j’ai travaillé comme stagiaire chercheur dans un laboratoire de recherche, l’institute of Network Cultures Avec Cristhina Cochior(RO), et le soutien de La fondation Wikimedia Netherlands, nous avons mené une recherche expérimentale et exploratoire sur la potentielle utilisation du contenu des projets tel que Wikipedia, Wikivoyage, Wikidictionary, etc dans des formats offline tel que Epub. Durant les 5 mois de recherche, nous avons fait passer des entretiens aux artistes ( Anja Groten de Hackers & Designers, Femke Smelts de Contant et Andre Castro de Piet Zwart ) concernant leurs utilisations du wiki : certains d’entre eux l’utilisent comme outil de création et d’autres sont intéressés pour l’utiliser pour faire des publications hybrides. Nous avons présenté notre recherche à la conférence annuelle de Wikimedia NL à Utrecht. Nous avons exposé de manière détaillée les découvertes de notre recherche, et nous avons présenté le design d’un prototype qui sert à exporter du contenu des Wikis(html) en epubs. Cette recherche est toujours en cours et nous la développons pendant notre temps libre car nous avons reçu beaucoup d’intérêt de la part de la fondation et des wikis indépendants. Cette recherche m’a fait découvrir le monde de la publication expérimentale et hybride et m’a fait prendre conscience de ses enjeux auxquels sont confrontés ses nombreux acteurs. Pour en savoir plus sur cette recherche vous pouvez consulter notre page Meta-Wiki ou notre blog ainsi que regarder la vidéo de présentation de la recherche. Le code est aussi disponible en Open Source.
-                                <br>
-                                <a class="links" href="https://meta.wikimedia.org/wiki/Research_on_e-books_with_Wikimedia_content">Metawiki</a>
-                            </p>
-                        </div>
-
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                outil open source
-                            </p>
-                            <h2>date</h2>
-                            <p>31-09-2016</p>
-                            <h2>contexte</h2>
-                            <p>PublishingLab</p>
-                            <h2>localisation</h2>
-                            <p>Amsterdam</p>
-                            <h2>conception/réalisation</h2>
-                            <p>5 mois</p>
-                        </div>
-                    </section>
-
-
-                </div>
-
-                <a href="#collфdæl" class="abrir" id="collфdæl" class="titulo">
-                    <span class="color1">collфdæl</span> </a>
-                <div class="contenu">
-
-
-                    <div class="carre">
-
-
-                        <a rel="gallery-5" href="images/colloidal/0.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/colloidal/0.jpg" alt="image">
-                        </a>
-
-                        <a rel="gallery-5" href="images/colloidal/1.png" class="swipebox">
-                            <img class="c" id="c" src="images/colloidal/1.png" alt="image">
-                        </a>
-                        <a rel="gallery-5" href="images/colloidal/2.png" class="swipebox">
-                            <img class="c" id="c" src="images/colloidal/2.png" alt="image">
-                        </a>
-                        <a rel="gallery-5" href="images/colloidal/3.png" class="swipebox">
-                            <img class="c" id="c" src="images/colloidal/3.png" alt="image">
-                        </a>
-
-
-                    </div>
-
-                    <section class="project__header">
-                      <a class="plus">+</a>
-                        <div class="project-info"  >
-
-
-                            <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs (accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
-                                <a href="http://www.wblut.com/">W:blut</a>
-                            </p>
-                        </div>
-
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                installation interactive
-                            </p>
-                            <h2>date</h2>
-                            <p>24-05-2016</p>
-                            <h2>contexte</h2>
-                            <p>Universidad de los Andes</p>
-                            <h2>localisation</h2>
-                            <p>Bogota</p>
-                            <h2>conception/réalisation</h2>
-                            <p>4 semaines</p>
-                        </div>
-                    </section>
-
-
-
-                </div>
-                <a href="#chambre" class="abrir" id="chambre">
-                    <span>le comble de la chambre blanche</span>
-                </a>
-                <div class="contenu">
-
-
-                    <div class="carre">
-
-
-
-                        <a rel="gallery-6" href="images/cb/cb1.png" class="swipebox">
-                            <img class="c" id="c" src="images/cb/cb1.png" alt="image">
-                        </a>
-                        <a rel="gallery-6" href="images/cb/cb2.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/cb/cb2.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-6" href="images/cb/cb3.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/cb/cb3.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-6" href="images/cb/cb4.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/cb/cb4.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-6" href="images/cb/cb5.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/cb/cb5.jpg" alt="image">
-                        </a>
-
-
-                    </div>
-
-
-                    <section class="project__header">
-
-<a class="plus">+</a>
-                        <div class="project-info"  >
-                            <p>Comment se métamorphose des objets dans la virtualisation du monde ?
-                                <br> Quelle valeur invisible ont des objets qui identifient notre style ?
-                                <br> Le mode d’utilisation d’un objet pourrait créer de nouvelles sous-cultures ?
-                                <br> Peut on donner une utilisation spécifique a un objet qui n’a pas de fonction particulière ?
-                                <br> Dans quelle mesure la technologie me permet d’approcher mon identité idéale ?
-
-                                <br> j’ai crée une chambre blanche, dans laquelle nous avons placé un lit,un réfrigérateur blanc, et un coquillage blanc. Ces trois éléments étaients connectés avec des capteurs pour déclencher quatre vidéos qui suggéraient l’érotisme,la désinhibition avec des créations sonores binaurale sur mesure. Les vidéos et sons se déclenchaient dès qu’il y avait une interaction avec un des trois objets de la chambre. Nous avions placé un ipad dans le réfrigérateur avec l’application Périscope en streaming pour remettre en question le sentiment d’intimité créée par cette ambiance blanche.
-                                <br>
-                                <a href="https://vimeo.com/211222335" class="links">video</a>
-                                <br>
-                                <a href="https://soundcloud.com/juan-andres-gomez-1/sets/el-colmo-de-un-cuarto-blanco" class="links">sound</a>
-                            </p>
-
-                        </div>
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                installation interactive
-                            </p>
-                            <h2>date</h2>
-                            <p>24-05-2016</p>
-                            <h2>contexte</h2>
-                            <p>Universidad de los Andes</p>
-                            <h2>localisation</h2>
-                            <p>Bogota</p>
-                            <h2>conception/réalisation :</h2>
-                            <p>4 semaines</p>
-                        </div>
-                    </section>
-
-
-                </div>
-                <a href="#dumbar" class="abrir" id="dumbar" class="titulo">decoding Information for future communication</a>
-
-                <div class="contenu">
-
-                    <div class="carre">
-
-                        <a rel="gallery-7" href="images/dumbar/dumbar1.png" class="swipebox">
-                            <img class="c" id="c" src="images/dumbar/dumbar1.png" alt="image">
-                        </a>
-                        <a rel="gallery-7" href="images/dumbar/dumbar2.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/dumbar/dumbar2.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-7" href="images/dumbar/dumbar3.png" class="swipebox">
-                            <img class="c" id="c" src="images/dumbar/dumbar3.png" alt="image">
-                        </a>
-                        <a rel="gallery-7" href="images/dumbar/dumbar4.png" class="swipebox">
-                            <img class="c" id="c" src="images/dumbar/dumbar4.png" alt="image">
-                        </a>
-                        <a rel="gallery-7" href="images/dumbar/dumbar5.png" class="swipebox">
-                            <img class="c" id="c" src="images/dumbar/dumbar5.png" alt="image">
-                        </a>
-
-
-
-
-
-                    </div>
-
-                    <section class="project__header">
-<a class="plus">+</a>
-                        <div class="project-info"  >
-                            <p>"Nous vivons ici et maintenant avec des souvenirs du passé et des fantasmes de l’avenir. Notre rôle en tant que communicateurs est de donner forme à cet avenir. Nous rendons l’avenir tangible en utilisant les outils du présent en faisant des références à des expériences passées. Et si l’avenir que nous devons créer n’est pas le nôtre ? Quelle langue utilisons-nous pour communiquer ? Peut-on se détacher de nos milieux culturels et esthétiques ? Et est-ce le but ultime d’un communicateur ? Nous avons été contactés par une nation extraterrestre. Nous avons reçu plusieurs messages au cours des derniers jours. Il est urgent de déchiffrer ces messages avant leur arrivée. Date prévue de l’atterrissage : dimanche 31 juillet 14h00." En binôme, nous avons voulu montrer aux extraterrestres que les êtres humains sont très différents au premier abord. Pour expliquer ces différences aux aliens, nous avons enregistré les réactions des passants à la suite de 3 différents gestes - une danse - une question inhabituelle - un geste amical. Ensuite, on a reporté les réactions des passants dans un diagramme pour établir un profil psychologique pour chacun d’eux selon le modèle de James Russell and Lisa Feldman Barrett. Le but était de reproduire ces mêmes gestes aux extraterrestres pour qu’ils puissent communiquer avec nous et ainsi connaître nos intentions en fonction de nos réactions. Workshop avec Studio Dumbar et Rejane Dal Bello.
-                                <br>
-                                <a href="https://www.youtube.com/watch?v=ZqbPe8UKhsY" class="links">video</a>
-                            </p>
-                        </div>
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                perfomance
-                            </p>
-                            <h2>date</h2>
-                            <p>31/07/2016
-                            </p>
-                            <h2>contexte</h2>
-                            <p>Open Set</p>
-                            <h2>localisation</h2>
-                            <p>Rotterdam</p>
-                            <h2>conception/réalisation</h2>
-                            <p>2 jours</p>
-                        </div>
-                    </section>
-
-
-                </div>
-                <a href="#andes" class="abrir" id="andes">
-                    <span>what happened yesterday?</span>
-
-                </a>
-                <div class="contenu">
-
-
-                    <div class="carre">
-
-                        <a rel="gallery-8" href="images/ayer/ayer3.png" class="swipebox">
-                            <img class="c" id="c" src="images/ayer/ayer3.png" alt="image">
-                        </a>
-                        <a rel="gallery-8" href="images/ayer/ayer1.png" class="swipebox">
-                            <img class="c" id="c" src="images/ayer/ayer1.png" alt="image">
-                        </a>
-                        <a rel="gallery-8" href="images/ayer/ayer2.png" class="swipebox">
-                            <img class="c" id="c" src="images/ayer/ayer2.png" alt="image">
-                        </a>
-                        <a rel="gallery-8" href="images/ayer/ayer4.png" class="swipebox">
-                            <img class="c" id="c" src="images/ayer/ayer4.png" alt="image">
-                        </a>
-
-                    </div>
-
-
-                    <section class="project__header">
-                      <a class="plus">+</a>
-                        <div class="project-info">
-
-                            <div class="project-info"  >
-                                <p>D’après une soirée festive il arrive d’oublier certains moments, par fois même les soirées peuvent être très folles et les gens des fois se ressemblent le lendemain pour essayer de chercher «ce qui s’est passé la veille» L’exercice était de créer les règles d’un jeux de société et puis passer à créer le joue et ensuite de ajouter une dimension transmedia à la façon de le jouer. j’ai crée un ensemble des règles qu’on a ensuite partagé en open source pour nos autres camarades.Une fois le jeux avait été testé on introduisait certaines fonctionnalités avec une carte Arduino avec un capteur de mouvement binaire et Processing afin de rendre le jeu plus interactif et visuel
-                                    <br>
-                                    <br>
-                                    <a href="https://github.com/zhampu/quemepasoayer" class="links">Github</a>
-                                    <br> <a href="http://quemepasoayer.tumblr.com/" class="links">Tumblr blogs</a>
-                                    <br>
-                                    <a href="https://vimeo.com/211232413" class="links">video</a>
-
-
-                                </p>
-                            </div>
-                        </div>
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                jeu de societé transmedia
-                            </p>
-                            <h2>date</h2>
-                            <p>24-05-2016
-                            </p>
-                            <h2>contexte</h2>
-                            <p>Universidad de los Andes</p>
-                            <h2>localisation</h2>
-                            <p>Bogota</p>
-                            <h2>conception/réalisation</h2>
-                            <p>2 semaines</p>
-                        </div>
-                    </section>
-
-                </div>
-                <a href="#scanner" class="abrir" id="scanner">
-                    <span>human scanner</span>
-
-
-                </a>
-                <div class="contenu">
-
-
-                    <div class="carre">
-
-
-                        <a rel="gallery-9" href="images/hs/hs1.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/hs/hs1.jpg" alt="image">
-                        </a>
-
-
-                        <a rel="gallery-9" href="images/hs/hs2.jpg" class="swipebox">
-                            <img class="c" id="c" src="images/hs/hs2.jpg" alt="image">
-                        </a>
-                        <a rel="gallery-9" href="images/hs/hs3.png" class="swipebox">
-                            <img class="c" id="c" src="images/hs/hs3.png" alt="image">
-                        </a>
-                        <a rel="gallery-9" href="images/hs/hs4.png" class="swipebox">
-                            <img class="c" id="c" src="images/hs/hs4.png" alt="image">
-                        </a>
-                        <a rel="gallery-9" href="images/hs/hs5.png" class="swipebox">
-                            <img class="c" id="c" src="images/hs/hs5.png" alt="image">
-                        </a>
-
-
-
-
-                    </div>
-
-
-                    <section class="project__header">
-                      <a class="plus">+</a>
-                        <div class="project-info">
-
-                            <div class="project-info"  >
-                                <p>Le concept de publier a évolué au fur et à mesure des années et de nouveaux termes tel que stack, drop, post et perform ont apparus pour rendre compte de ces évolutions. La publication s’est dotée d’enjeux politiques et sociaux. Lors d’un workshop « Web-to-Print-to-Street avec Paul Sollelis j’ai demandé à des passants dans les rues de Rotterdam de se laisser prendre en photo pour ensuite «découper leur corps» pour «poster» ces différentes parties sur une page Instagram que j’avais crée. Le langage utilisé est remis est question entre la traite des être humains et le concept de découper, chopper et poster qui sont des mots utilisés couramment dans des logiciels de créations d’images. Human Scanner est un projet que j’actualise régulièrement.
-                                    <br>
-                                    <a class="links" href="https://www.instagram.com/humanscanner/">Instagram</a>
-                                    <a class="links" href="https://vimeo.com/210329302">video</a> </p>
-                            </div>
-                        </div>
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                net performance
-                            </p>
-                            <h2>date</h2>
-                            <p>03/08/2016
-                            </p>
-                            <h2>contexte</h2>
-                            <p>Open Set</p>
-                            <h2>localisation</h2>
-                            <p>Rotterdam</p>
-                            <h2>conception/réalisation</h2>
-                            <p>1 jour</p>
-                        </div>
-                    </section>
-
-                </div>
-                <a href="#oisseaux" class="abrir" id="oisseaux">
-                    <span>les oisseaux de passage</span>
-
-
-                </a>
-                <div class="contenu">
-
-
-                    <div class="carre">
-
-
-
-                    </div>
-
-
-                    <section class="project__header">
-<a class="plus">+</a>
-
-                        <div class="project-info"  >
-                            <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs(accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
-                                <a href="http://www.wblut.com/">W:blut</a>
-                            </p>
-                        </div>
-
-                        <div class="information">
-                            <h2>catégorie</h2>
-                            <p>
-                                net performance
-                            </p>
-                            <h2>date</h2>
-                            <p>03/08/2016
-                            </p>
-                            <h2>contexte</h2>
-                            <p>Open Set</p>
-                            <h2>localisation</h2>
-                            <p>Rotterdam</p>
-                            <h2>conception/réalisation</h2>
-                            <p>1 jour</p>
-                        </div>
-                    </section>
-
-
-                </div>
-
-
-
-
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           net performance
+                        </p>
+                        <h2>date</h2>
+                        <p>03/08/2016
+                        </p>
+                        <h2>contexte</h2>
+                        <p>Open Set</p>
+                        <h2>localisation</h2>
+                        <p>Rotterdam</p>
+                        <h2>conception/réalisation</h2>
+                        <p>1 jour</p>
+                     </div>
+                  </section>
+               </div>
+               <a href="#oisseaux" class="abrir" id="oisseaux">
+               <span>les oisseaux de passage</span>
+               </a>
+               <div class="contenu">
+                  <div class="carre">
+                  </div>
+                  <section class="project__header">
+                     <a class="plus">+</a>
+                     <div class="project-info"  >
+                        <p>Avec Collфdæl on a voulu interroger le spectateur sur la fluidité de l’identité personnelle et virtuelle. Pour se faire on a installé une «pierre philosophale» dont chaque facette était composée de miroirs dans une chambre noire avec un projecteur. A l’intérieur de cette pierre il y avait 3 capteurs(accéléromètre,microphone,proximètre). De cette manière dès que le spectateur avait une interaction avec la pierre, la projection reflétait ces interactions. Ainsi, on pouvait remarquer la fluidité de l’identité personnelle. La personne était incitée à voir son reflet dans le miroir et cela créer un reflet fragmenté de son visage, de cette manière ell pouvait s’interro- ger sur son identité. Le code de la forme projettée est inspiré du code fait par Frederik Vanhoutte de
+                           <a href="http://www.wblut.com/">W:blut</a>
+                        </p>
+                     </div>
+                     <div class="information">
+                        <h2>catégorie</h2>
+                        <p>
+                           net performance
+                        </p>
+                        <h2>date</h2>
+                        <p>03/08/2016
+                        </p>
+                        <h2>contexte</h2>
+                        <p>Open Set</p>
+                        <h2>localisation</h2>
+                        <p>Rotterdam</p>
+                        <h2>conception/réalisation</h2>
+                        <p>1 jour</p>
+                     </div>
+                  </section>
+               </div>
             </section>
-
-        </div>
-
-
-        <div id="DE">
+         </div>
+         <div id="DE">
             <br>
-        </div>
-
-
-
-        <div id="ES">
+         </div>
+         <div id="ES">
             <br>
-
-        </div>
-        <br>
-        <br>
-
-
-
-
-
-</div>
-
-</div>
-<script src="js/switch.js"></script>
-
-
-</body>
-
+         </div>
+         <br>
+         <br>
+   </div>
+   </div>
+   <script src="js/switch.js"></script>
+   </body>
 </html>

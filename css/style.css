@@ -329,6 +329,11 @@ a.active, a:active, a:hover {
   display: relative;
   cursor: move;
 }
+.information  {
+  flex: auto;
+  margin-left: 2%;
+}
+
 .information h2 {
   font-family: IBH;
   font-size: 10px;
@@ -341,6 +346,16 @@ a.active, a:active, a:hover {
 }
 .project-info {
   flex-basis: 80%;
+  display: none;
+  display: grid;
+  /*margin-left: 4%;
+  margin-right: 4%;*/
+}
+.plus{
+font-size: 32px;
+font-family: IBH;
+margin-right: 2%;
+
 }
 
 .links {
@@ -566,7 +581,7 @@ a.active, a:active, a:hover {
 .carre {
   width: auto;
   height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   overflow: hidden;
   margin: 3%;
 }
@@ -588,6 +603,8 @@ a.active, a:active, a:hover {
 }
 .project-info {
   flex-basis: 80%;
+  display: grid;
+  display: none;!important
 }
 
 .links {
@@ -737,7 +754,9 @@ h2 {
   }
   .project-info {
     flex-basis: 80%;
-    display: grid;
+    display:none;!important
+    display:grid;!important
+
   }
   .information {
     font-size: 10px;
@@ -746,9 +765,17 @@ h2 {
     margin-top: 5%;
   }
 }
-
+@page {
+  size: A4;
+  margin: 0.5cm;
+}
 
 @media print {
+
+.abrir{
+margin-top: 0.7cm;
+
+}
   .hidden-print {
     display: none;
     !important
@@ -759,11 +786,15 @@ h2 {
   .information {
     font-size: 10px;
     font-family: IB;
-    page-break-after: always;
+    /*page-break-after: always;*/
+    page-break-after: auto;
+    position: relative
   }
   .titulo {
     float: none;
     !important;
+    page-break-before: always;
+    position: relative
   }
   .div {
     float: none;
@@ -772,8 +803,20 @@ h2 {
   .contenu {
     float: none;
     !important;
+    position: relative
+  }
+  .project-info{
+    display: block;
   }
 
+  .plus{
+    display: none;
+  }
+.carre{
+width: 700px;
+
+
+}
 }
 
 @media only screen and (max-width: 480px)  {
@@ -889,7 +932,8 @@ h2 {
   }
   .project-info {
     flex-basis: 80%;
-    display: grid;
+    display: grid;!important
+    display: none;!important
   }
   .information {
     font-size: 10px;

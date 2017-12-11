@@ -1,3 +1,4 @@
+
 //languages
 function ES() {
   $("#EN, #FR, #ES").hide();
@@ -18,6 +19,14 @@ function DE() {
   $("#EN, #FR, #ES").hide();
   $("#DE").show();
 }
+
+//Open more info
+$(".plus").click(function() {
+  $(this).next(".project-info").toggle("slow");
+  // $(".plus").toggle("slow");
+
+});
+
 //Open the words
 $(".abrir").click(function() {
   $(this).next(".contenu").toggle("slow");
@@ -28,6 +37,7 @@ $(".abrir").click(function() {
 })
 $(".c").draggable();
 $('.swipebox').swipebox();
+
 //randomize the images on load
 function mover() {
   $(".c").each(function(index) {
