@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: IBH;
-  src: url(../fonts/IB-Heavy.eot?#iefix) format('embedded-opentype'), url(../fonts/IB-Heavy.otf) format('opentype'), url(../fonts/IB-Heavy.woff) format('woff'), url(../fonts/IB-Heavy.ttf) format('truetype'), url(../fonts/IB-Heavy.svg#Font) format('svg');
+  src: url(../fonts/IB-Heavy.eot?#iefix) format('embedded-opentype'), url(../fonts/IB-Heavy.woff) format('woff'), url(../fonts/IB-Heavy.ttf) format('truetype'), url(../fonts/IB-Heavy.svg#Font) format('svg');
   font-weight: 700;
   font-style: normal
 }
 
 @font-face {
   font-family: IB;
-  src: url(../fonts/IB-Book.eot?#iefix) format('embedded-opentype'), url(../fonts/IB-Book.otf) format('opentype'), url(../fonts/IB-Book.woff) format('woff'), url(../fonts/IB-Book.ttf) format('truetype'), url(../fonts/IB-Book.svg#Font) format('svg');
+  src: url(../fonts/IB-Book.eot?#iefix) format('embedded-opentype'), url(../fonts/IB-Book.woff) format('woff'), url(../fonts/IB-Book.ttf) format('truetype'), url(../fonts/IB-Book.svg#Font) format('svg');
   font-weight: 400;
   font-style: normal
 }
@@ -25,60 +25,68 @@
   overflow: visible
 }
 
-
 /* languages*/
+
 #EN {
   display: none;
 }
+
 #FR {
   display: block
 }
+
 #ES {
   display: none
 }
+
 #DE {
   display: none
 }
 
 .lengua {
-
   margin-right: -2%;
 }
 
-
-
+.pagebreak{
+  page-break-after: always;
+  display: inline;
+}
 /*-----------------navigation--------------------------*/
 
 nav {}
+
 nav ul {
   float: left;
   padding-top: 1em;
-  !important
 }
+
 nav ul li {
   display: inline-block;
   float: left;
 }
+
 nav ul li:not(:first-child) {
   margin-left: 25px;
 }
+
 nav ul li a {
   display: inline-block;
   outline: none;
   color: #1f2227;
   font-size: 16px;
-  !important text-decoration: none;
+  text-decoration: none;
   letter-spacing: 0.04em;
 }
+
 nav ul li a:hover {
   color: #808080;
   text-decoration: none;
 }
 
-
 /*-----------------MENU--------------------------*/
+
 .fadein {
-  hyphens:  normal;
+  hyphens: normal;
   animation: fadein 3s;
   -moz-animation: fadein 3s;
   /* Firefox */
@@ -87,6 +95,7 @@ nav ul li a:hover {
   -o-animation: fadein 3s;
   /* Opera */
 }
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -95,6 +104,7 @@ nav ul li a:hover {
     opacity: 1;
   }
 }
+
 @-moz-keyframes fadein {
   /* Firefox */
   from {
@@ -104,6 +114,7 @@ nav ul li a:hover {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes fadein {
   /* Safari and Chrome */
   from {
@@ -113,6 +124,7 @@ nav ul li a:hover {
     opacity: 1;
   }
 }
+
 @-o-keyframes fadein {
   /* Opera */
   from {
@@ -122,6 +134,7 @@ nav ul li a:hover {
     opacity: 1;
   }
 }
+
 html {
   font-family: IB;
   color: black;
@@ -129,23 +142,30 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   color: black;
 }
+
 .site-title {
   float: left;
   display: inline-block;
   font-size: 1vw;
 }
+
 .header {
   padding-top: 20px;
   margin-bottom: 5%;
 }
+
 .project__header {
   margin-top: 3%;
   display: flex;
+  flex-wrap: wrap;
+flex-direction: row;
   justify-content: space-between;
 }
+
 .hidden {
   display: none;
 }
@@ -154,9 +174,11 @@ body {
   width: 95%;
   margin: 0 auto;
 }
+
 .clear {
   clear: both;
 }
+
 .contenu {
   text-decoration: none;
   display: none;
@@ -164,83 +186,122 @@ body {
   margin-bottom: 2em;
 }
 
-.project-info p{
+.project-info p {
   -webkit-hyphens: manual;
   -ms-hyphens: manual;
   hyphens: manual;
 }
 
+.st3 {
+  background: #479265;
+  background: rgba(71, 146, 101, 1);
+}
+
+.st4 {
+  background: #D98B59;
+  background: rgba(217, 139, 89, 1);
+}
+
+.st5 {
+  background: #345499;
+  background: rgba(52, 84, 153, 1);
+}
+
+.st6 {
+  background: #B8394B;
+  background: rgba(184, 57, 75, 1);
+}
+
+.st7 {
+  background: #633C7C;
+  background: rgba(99, 60, 124, 1);
+}
+
+.st8 {
+  background: #E7DF62;
+  background: rgba(231, 223, 98, 1);
+}
+
 /*projects*/
+
 #collфdæl {
   font-size: 7vw;
   font-family: IBH;
-  color: #FB4426;
+  color: #633C7C;
   page-break-before: always;
 }
+
 #chambre {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #00A446;
+  color: #D98B59;
   page-break-before: always;
 }
+
 #dumbar {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #1C397D;
+  color: #479265;
   page-break-before: always;
 }
+
 #andes {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #FFCC3F;
+  color: #E7DF62;
   page-break-before: always;
 }
+
 #wiki2epub {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #00A2DE;
+  color: #E5A0C5;
   page-break-before: always;
 }
+
 #scanner {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #751870;
+  color: #345499;
   page-break-before: always;
 }
+
 #oisseaux {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #000000;
-  !important;
+  color: #B8394B;
   page-break-before: always;
 }
+
 #hyg {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #F7007A;
-  !important;
+  color: #5C5252;
   page-break-before: always;
 }
+
 #chaumont {
   font-size: 7vw;
-  ;
   font-family: IBH;
   color: #000000;
 }
+
 /*experience*/
+
 #IRB {
   font-size: 7vw;
   font-family: IBH;
   color: #BA3E58;
   page-break-before: always;
 }
+
 #Plab {
   font-size: 7vw;
   ;
@@ -248,6 +309,7 @@ body {
   color: #318F5B;
   page-break-before: always;
 }
+
 #ambassade {
   font-size: 7vw;
   ;
@@ -255,6 +317,7 @@ body {
   color: #25346D;
   page-break-before: always;
 }
+
 #perrine {
   font-size: 7vw;
   ;
@@ -262,13 +325,15 @@ body {
   color: #644589;
   page-break-before: always;
 }
+
 #surreal {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #644589;
+  color: #B8394B;
   page-break-before: always;
 }
+
 #hellotomorrow {
   font-size: 7vw;
   ;
@@ -276,13 +341,16 @@ body {
   color: #504446;
   page-break-before: always;
 }
+
 /*workshops*/
+
 #openset {
   font-size: 7vw;
   font-family: IBH;
   color: #BA3E58;
   page-break-before: always;
 }
+
 #CIID {
   font-size: 7vw;
   ;
@@ -290,6 +358,7 @@ body {
   color: #318F5B;
   page-break-before: always;
 }
+
 #wearablesculpture {
   font-size: 7vw;
   ;
@@ -297,6 +366,7 @@ body {
   color: #25346D;
   page-break-before: always;
 }
+
 #son {
   font-size: 7vw;
   ;
@@ -310,9 +380,13 @@ a:active, a:hover, a:link, a:visited {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
 a.active, a:active, a:hover {
   text-decoration: underline;
   color: rgb(0, 0, 0);
+   text-decoration-skip: ink;
+  text-decoration-skip: spaces leading-spaces trailing-spaces;
+
 }
 
 .carre {
@@ -322,45 +396,51 @@ a.active, a:active, a:hover {
   overflow: hidden;
   margin: 3%;
 }
- a img {
+
+a img {
   width: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
   display: relative;
   cursor: move;
 }
-.information  {
+
+.information {
   flex: auto;
-  margin-left: 2%;
+    width:200px;
+
 }
 
 .information h2 {
   font-family: IBH;
   font-size: 10px;
 }
+
 .information h2 p {
   font-family: IB;
 }
+
 .info_texto {
   flex-basis: auto;
 }
+
 .project-info {
   flex-basis: 80%;
-  display: none;
-  display: grid;
-  /*margin-left: 4%;
-  margin-right: 4%;*/
-}
-.plus{
-font-size: 32px;
-font-family: IBH;
-margin-right: 2%;
+  margin-bottom:3%;
 
+
+}
+
+.plus {
+  font-size: 32px;
+  font-family: IBH;
+  margin-right: 2%;
 }
 
 .links {
   font-family: IBH;
 }
+
 p {
   font-size: 14px;
   line-height: 21px;
@@ -370,9 +450,11 @@ p {
   -ms-hyphens: auto;
   hyphens: auto;
 }
+
 h2 {
   margin: 0;
 }
+
 #col {
   margin-right: 3%;
   -moz-column-count: 2;
@@ -382,96 +464,104 @@ h2 {
   page-break-inside: avoid;
   break-inside: avoid;
 }
+
 .ui-draggable-dragging {
   cursor: move;
 }
- a  img:hover {
+
+a img:hover {
   cursor: move;
 }
+
 .hidden {
   display: none;
 }
+
 .article {
   display: inline;
 }
+
 .wrapper {
   width: 95%;
   margin: 0 auto;
 }
+
 .clear {
   clear: both;
 }
 
-.inline{
-  display: inline-block;
+.inline {
+  display:block;
 }
+
 .contenu {
   text-decoration: none;
   display: none;
   font-family: IB;
   margin-bottom: 2em;
 }
+
 /*projects*/
+
 #collфdæl {
   font-size: 7vw;
   font-family: IBH;
-  color: #FB4426;
+  color: #633C7C;
   page-break-before: always;
 }
+
 #chambre {
   font-size: 7vw;
-  ;
   font-family: IBH;
-  color: #00A446;
+  color: #D98B59;
   page-break-before: always;
 }
+
 #dumbar {
   font-size: 7vw;
-  ;
   font-family: IBH;
-  color: #1C397D;
+  color: #479265;
   page-break-before: always;
 }
+
 #andes {
   font-size: 7vw;
-  ;
   font-family: IBH;
-  color: #FFCC3F;
+  color: #E7DF62;
   page-break-before: always;
 }
+
 #wiki2epub {
   font-size: 7vw;
-  ;
   font-family: IBH;
-  color: #00A2DE;
+  color: #E5A0C5;
   page-break-before: always;
 }
+
 #scanner {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #751870;
+  color: #345499;
   page-break-before: always;
 }
+
 #oisseaux {
   font-size: 7vw;
-  ;
   font-family: IBH;
-  color: #000000;
-  !important;
+  color: #B8394B;
   page-break-before: always;
 }
+
 #hyg {
   font-size: 7vw;
-  ;
   font-family: IBH;
-  color: #F7007A;
-  !important;
+  color: #5C5252;
   page-break-before: always;
 }
+
 #chaumont {
   font-size: 7vw;
-  ;
   font-family: IBH;
   color: #000000;
 }
@@ -480,16 +570,19 @@ h2 {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #751870;
+  color: #2F363E;
   page-break-before: always;
 }
+
 /*experience*/
+
 #IRB {
   font-size: 7vw;
   font-family: IBH;
   color: #BA3E58;
   page-break-before: always;
 }
+
 #Plab {
   font-size: 7vw;
   ;
@@ -497,27 +590,29 @@ h2 {
   color: #318F5B;
   page-break-before: always;
 }
+
 #ambassade {
   font-size: 7vw;
-  ;
   font-family: IBH;
   color: #25346D;
   page-break-before: always;
 }
+
 #perrine {
   font-size: 7vw;
-  ;
   font-family: IBH;
   color: #644589;
   page-break-before: always;
 }
+
 #surreal {
   font-size: 7vw;
   ;
   font-family: IBH;
-  color: #644589;
+  color: #B8394B;
   page-break-before: always;
 }
+
 #hellotomorrow {
   font-size: 7vw;
   ;
@@ -525,13 +620,16 @@ h2 {
   color: #504446;
   page-break-before: always;
 }
+
 /*workshops*/
+
 #openset {
   font-size: 7vw;
   font-family: IBH;
   color: #BA3E58;
   page-break-before: always;
 }
+
 #CIID {
   font-size: 7vw;
   ;
@@ -539,6 +637,7 @@ h2 {
   color: #318F5B;
   page-break-before: always;
 }
+
 #wearablesculpture {
   font-size: 7vw;
   ;
@@ -546,6 +645,7 @@ h2 {
   color: #25346D;
   page-break-before: always;
 }
+
 #son {
   font-size: 7vw;
   ;
@@ -553,31 +653,40 @@ h2 {
   color: #644589;
   page-break-before: always;
 }
+
 .titulo {
   page-break-before: always;
   text-decoration: underline;
-  !important font-size: : 7vw;
+   font-size: : 15vw;!important;
   font-weight: 700;
   z-index: 4;
   position: relative;
-  font-size: 7vw;
-  ;
+  font-size: 7vw;;
   font-family: IBH;
   color: #25346D;
-  !important;
+
+  margin-right: 2%;
 }
+
 a:active, a:hover, a:link, a:visited {
   outline: 0;
   text-decoration: none;
   color: rgb(0, 0, 0);
+     text-decoration-skip: ink;
+    text-decoration-skip: spaces leading-spaces trailing-spaces;
 }
+
 a.active, a:active, a:hover {
   text-decoration: underline;
   color: rgb(0, 0, 0);
+     text-decoration-skip: ink;
+     text-decoration-skip: spaces leading-spaces trailing-spaces;
 }
+
 .languages {
   display: inline;
 }
+
 .carre {
   width: auto;
   height: auto;
@@ -585,31 +694,36 @@ a.active, a:active, a:hover {
   overflow: hidden;
   margin: 3%;
 }
+
 .c {
   width: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
   display: relative;
 }
+
 .information h2 {
   font-family: IBH;
   font-size: 10px;
 }
+
 .information h2 p {
   font-family: IB;
 }
+
 .info_texto {
   flex-basis: auto;
 }
+
 .project-info {
   flex-basis: 80%;
-  display: grid;
-  display: none;!important
+
 }
 
 .links {
   font-family: IBH;
 }
+
 p {
   font-size: 14px;
   line-height: 21px;
@@ -619,9 +733,11 @@ p {
   -ms-hyphens: auto;
   hyphens: auto;
 }
+
 h2 {
   margin: 0;
 }
+
 #col {
   margin-right: 3%;
   -moz-column-count: 2;
@@ -631,18 +747,25 @@ h2 {
   page-break-inside: avoid;
   break-inside: avoid;
 }
+
 .ui-draggable-dragging {
   cursor: move;
 }
- a  img:hover {
+
+a img:hover {
   cursor: move;
 }
 
-
-
-@media only screen and (max-width: 767px)  {
-
-
+@media only screen and (max-width: 767px) {
+  #col {
+    margin-right: 3%;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
   .nav-container {
     position: fixed;
     top: 0;
@@ -750,32 +873,38 @@ h2 {
   .project__header {
     margin-top: 3%;
     justify-content: space-between;
-    display: grid;
+    flex-wrap: wrap;
+flex-direction: row;
+    /**/
   }
   .project-info {
     flex-basis: 80%;
-    display:none;!important
-    display:grid;!important
+    margin-bottom:3%;
 
   }
   .information {
     font-size: 10px;
     font-family: IB;
     page-break-after: always;
-    margin-top: 5%;
+  width:200px;
+    margin-left: 0
   }
 }
+
 @page {
-  size: A4;
+  size: A4 portrait;
   margin: 0.5cm;
 }
 
+/*@page {
+  size: A4 landscape;
+  margin: 0.5cm;
+}*/
+
 @media print {
-
-.abrir{
-margin-top: 0.7cm;
-
-}
+  .abrir {
+    margin-top: 0.7cm;
+  }
   .hidden-print {
     display: none;
     !important
@@ -786,41 +915,47 @@ margin-top: 0.7cm;
   .information {
     font-size: 10px;
     font-family: IB;
-    /*page-break-after: always;*/
-    page-break-after: auto;
-    position: relative
+    page-break-after: always;
+    position: relative;
+      width:200px;
   }
   .titulo {
     float: none;
-    !important;
     page-break-before: always;
     position: relative
   }
   .div {
     float: none;
-    !important;
   }
   .contenu {
     float: none;
-    !important;
     position: relative
   }
-  .project-info{
+  .project-info {
     display: block;
+    margin-bottom:3%;
   }
-
-  .plus{
+  .plus {
     display: none;
   }
-.carre{
-width: 700px;
-
-
+  .carre {
+    width: 700px;
+  }
+  .pagebreak{
+    display:inline-block;
+  }
 }
-}
 
-@media only screen and (max-width: 480px)  {
-
+@media only screen and (max-width: 480px) {
+  #col {
+    margin-right: 3%;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
   .nav-container {
     position: fixed;
     top: 0;
@@ -928,18 +1063,21 @@ width: 700px;
   .project__header {
     margin-top: 3%;
     justify-content: space-between;
-    display: grid;
+    flex-wrap: wrap;
+flex-direction: row;
   }
   .project-info {
     flex-basis: 80%;
-    display: grid;!important
-    display: none;!important
+    margin-bottom:3%;
+
   }
   .information {
     font-size: 10px;
     font-family: IB;
     page-break-after: always;
     margin-top: 2%;
+    margin-left: 0;
+    width:200px;
   }
   .c {
     width: 100%;
@@ -947,13 +1085,16 @@ width: 700px;
     position: relative;
     display: relative;
   }
-
   a img {
-   width: 100%;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   position: relative;
-   display: relative;
-   cursor: move;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    display: relative;
+    cursor: move;
   }
 
+  .titulo{
+display: inline;
+    font-size: 15vh;
+  }
 }
