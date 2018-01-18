@@ -165,3 +165,89 @@ Think of a logical structure and order for your website
                          '"""         '"""  '"""
 
 </pre>
+
+# CSS-Print skills
+<pre>
+                                 __
+                     .--.      .'  `.
+                   .' . :\    /   :  L
+                   F     :\  /   . : |        .-._
+                  /     :  \/        J      .' ___\
+                 J     :   /      : : L    /--'   ``.
+                 F      : J           |  .<'.o.  `-'>
+                /        J             L \_>.   .--w)
+               J        /              \_/|   . `-__|
+               F                        / `    -' /|)
+              |   :                    J   '        |
+             .'   ':                   |    .    :  \
+            /                          J      :     |L
+           F                              |     \   ||
+          F .                             |   :      |
+         F  |                             ; .   :  : F
+        /   |                                     : J
+       J    J             )                ;        F
+       |     L           /      .:'                J
+    .-'F:     L        ./       :: :       .       F
+    `-'F:     .\    `:.J         :::.             J
+      J       ::\    `:|        |::::\            |
+      J        |:`.    J        :`:::\            F
+       L   :':/ \ `-`.  \       : `:::|        .-'
+       |     /   L    >--\         :::|`.    .-'
+       J    J    |    |   L     .  :::: :`, /
+        L   F    J    )   |        >::   : /
+        |  J      L   F   \     .-.:'   . /
+        ): |     J   /     `-   | |   .--'
+        /  |     |: J        L  J J   )
+        L  |     |: |        L   F|   /
+        \: J     \:  L       \  /  L |
+         L |      \  |        F|   | )
+         J F       \ J       J |   |J
+          L|        \ \      | |   | L
+          J L        \ \     F \   F |
+           L\         \ \   J   | J   L
+          /__\_________)_`._)_  |_/   \_____
+                              ""   `"""
+
+VK
+</pre>
+
+* https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/
+* https://www.noupe.com/design/css-perfect-print-stylesheet-98272.html
+* https://alistapart.com/article/goingtoprint/
+* http://edutechwiki.unige.ch/en/CSS_for_print_tutorial
+* https://stackoverflow.com/questions/9519556/faster-way-to-develop-and-test-print-stylesheets-avoid-print-preview-every-time
+
+
+# Don't fall in the "Cathedral"
+
+<pre>
+
+                                                   .-.  .-.
+           ,                    _.._     _         \  \ |  L
+          /(                 _-` _  `-`'` `._,-)    \  |/  L
+         |  `.              /   ( `._.-.    ',__    |  Y  /
+          \  /          __,/_   `-..\__,        `.  /  | /
+           //      _-'``                 `.   __  `'    /
+          ||   _..;_                       '.<@>\   <,  \>
+          \\__/                   |         _.-'`       /
+           `-/                 _   \    `--'     <-""";`
+            /                   `.  `.          _..._,'
+           |      |               \   `-._   _.'
+           |      \      /         \      `';\
+           |       \    /           \     -` /
+            \       |   |            `"\"`   |
+             \       \  \       -.     /      \
+              `._     |-.>,       `\_,-|       \
+                |`-.  /    `>-._    \  `.__     |
+                \     |    /    \   /      )   /
+                 `-.  `-._< sk  >   \     /   <
+                   :_     \\   (     )    \    |
+                     |   __)\   `'._/      `''`
+                     `'-'\   \
+                          `'-'
+
+</pre>
+
+The learning curve of some coding languages can be stiff, so try to divide your website in to easily achievable objectives.If not you may fall in doing this project longer than needed and you will spent precious time looking at references that you may not need.
+
+
