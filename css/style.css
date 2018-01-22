@@ -588,6 +588,13 @@ a img:hover {
   page-break-before: always;
 }
 
+#hd {
+  font-size: 7vw;
+  font-family: IBH;
+  color: #318F5B;
+  page-break-before: always;
+}
+
 #ambassade {
   font-size: 7vw;
   font-family: IBH;
@@ -1110,4 +1117,8 @@ display: inline;
 }
   .info-contenido p{
     margin-bottom: 20px !important;
+  }
+
+  .one_third H3 {
+    font-family:IBH;
   }
