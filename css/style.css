@@ -917,6 +917,9 @@ flex-direction: row;
 }*/
 
 @media print {
+  .c {
+    width: 25%;
+  }
   .abrir {
     margin-top: 0.7cm;
   }

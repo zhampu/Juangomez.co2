@@ -1,5 +1,6 @@
 //Open the words
 
+
 $(".abrir").click(function() {
     $(this).next(".contenu").toggle("slow");
     $(this).toggleClass("inline");
