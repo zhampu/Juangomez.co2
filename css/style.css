@@ -1,5 +1,9 @@
 /*fontface*/
+span {
 
+font-family: IBH;
+    cursor: pointer;
+  }
 @font-face {
   font-family: IBH;
   src: url(../fonts/IB-Heavy.eot?#iefix) format('embedded-opentype'), url(../fonts/IB-Heavy.woff) format('woff'), url(../fonts/IB-Heavy.ttf) format('truetype'), url(../fonts/IB-Heavy.svg#Font) format('svg');

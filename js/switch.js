@@ -1,3 +1,4 @@
+//Open the words
 
 $(".abrir").click(function() {
     $(this).next(".contenu").toggle("slow");
@@ -6,6 +7,19 @@ $(".abrir").click(function() {
         mover();
     }, 500);
 });
+
+
+$( "span" ).click(function() {
+  $( ".abrir" ).each(function() {
+    $(this).toggleClass("inline");
+    $(this).next(".contenu").toggle("slow");
+    setTimeout(function() {
+        mover();
+    }, 500);
+  });
+});
+
+
 //languages
 function ES() {
   $('#french,#english,#german').css('font-family', 'IB');
@@ -37,7 +51,7 @@ function DE() {
 }
 
 
-//Open the words
+
 
 $(".c").draggable();
 $('.swipebox').swipebox();
@@ -52,4 +66,4 @@ function mover() {
 
         });
     });
-}
+};
