@@ -1,34 +1,3 @@
-// $(document).ready(function() {
-//     // Optimalisation: Store the references outside the event handler:
-//     var $window = $(window);
-//
-//     function checkWidth() {
-//         var windowsize = $window.width();
-//         if (windowsize > 440) {
-//           $(".abrir").click(function() {
-//               $(this).next(".contenu").toggle("slow");
-//               $(this).toggleClass("inline");
-//               setTimeout(function() {
-//                   mover();
-//               }, 500);
-//           });
-//         }
-//         else if (windowsize < 440) {
-//           $(".abrir").click(function() {
-//               $(this).next(".contenu").toggle("slow");
-//               $(this).toggleClass("inline");
-//
-//           });
-//         } {
-//
-//         }
-//     }
-//     // Execute on load
-//     checkWidth();
-//     // Bind event listener
-//     $(window).resize(checkWidth);
-// });
-
 
 $(".abrir").click(function() {
     $(this).next(".contenu").toggle("slow");
@@ -39,21 +8,30 @@ $(".abrir").click(function() {
 });
 //languages
 function ES() {
+  $('#french,#english,#german').css('font-family', 'IB');
+  $('#espanol').css('font-family', 'IBH');
     $("#EN, #FR, #ES").hide();
     $("#ES").show();
 }
 
 function FR() {
+  $('#espanol,#english,#german').css('font-family', 'IB');
+  $('#french').css('font-family', 'IBH');
     $("#EN, #DE, #ES").hide();
     $("#FR").show();
+
 }
 
 function EN() {
+  $('#espanol,#french,#german').css('font-family', 'IB');
+  $('#english').css('font-family', 'IBH');
     $("#FR, #DE, #ES").hide();
     $("#EN").show();
 }
 
 function DE() {
+  $('#espanol,#english,#french').css('font-family', 'IB');
+  $('#german').css('font-family', 'IBH');
     $("#EN, #FR, #ES").hide();
     $("#DE").show();
 }
